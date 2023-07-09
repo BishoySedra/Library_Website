@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    color: var(--fontColor);
+    background: var(--firstMainColor);
+}
+
+body {
+    background-color: var(--firstMainColor);
+}
+
+:root {
+    --firstMainColor: #ff2359;
+    --secondMainColor: #3d305b;
+    --fontColor: white;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+}
+/* ******************************************************** */
+
+/* start form design style section */
+
+.subContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* end form design style section */
+
+/* start label style */
+.labels {
+    color: var(--fontColor);
+    font-size: 15px;
+    width: 30%;
+    margin: 10px;
+}
+
+.labelsG {
+    color: var(--fontColor);
+    font-size: 15px;
+}
+
+.labelsG {
+    cursor: pointer;
+}
+
+.inputs:focus + .labels{
+    color: var(--firstMainColor);
+}
+/* end label style */
+
+/* start gender section style  */
+.genderLabel {
+    display: inline;
+}
+
+.labelsG > input {
+    display: none;
+}
+
+.labelsG > input:checked + .radioButton>.biGender {
+    background-color: var(--firstMainColor);
+}
+
+.biGender {
+    fill: var(--secondMainColor);
+    background-color: var(--fontColor);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 3px;
+    margin: var(--mainMargin);
+}
+
+.radioButton {
+    display: flex;
+    align-items: center;
+}
+
+.genderContainer {
+    display: flex;
+    margin: var(--mainMargin);
+    width: 70%;
+}
+
+.genderContainer .labelsG:first-child {
+    margin-right: var(--mainMargin);
+}
+
+/* end gender section style  */
+
+/* start input section style */
+.inputs {
+    border: none;
+    padding: 13px;
+    margin: var(--mainMargin);
+    background-color: rgba(255, 255, 255, 0.064);
+    color: var(--firstMainColor);   
+    width: 70%; 
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}
+
+/* end input section style */
+
+
+/* start button section style */
+.submitButton {
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--firstMainColor);
+    color: var(--secondMainColor);
+    width: 100%;
+}
+
+.submitButton:active {
+    transform: scale(0.98);
+}
+
+/* end button section style */

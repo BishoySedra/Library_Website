@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    color: var(--fontColor);
+    background: var(--firstMainColor);
+}
+
+body {
+    background-color: var(--secondMainColor);
+}
+
+:root {
+    --firstMainColor: #ff2359;
+    --secondMainColor: #3d305b;
+    --fontColor: white;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+}
+/* ******************************************************** */
+
+/* start form design style section */
+
+.subContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* end form design style section */
+
+/* start label style */
+.labels {
+    color: var(--fontColor);
+    font-size: 15px;
+    width: 30%;
+    margin: 10px;
+}
+
+.inputs:focus + .labels{
+    color: #ff2359;
+}
+/* end label style */
+
+/* start input section style */
+.inputs {
+    border: none;
+    padding: 13px;
+    margin: var(--mainMargin);
+    background-color: rgba(255, 255, 255, 0.064);
+    color: var(--firstMainColor);   
+    width: 70%; 
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* end input section style */

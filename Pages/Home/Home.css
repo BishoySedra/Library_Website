@@ -1,0 +1,81 @@
+body {
+  background-image: url("../../Photos/homeBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+main {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #4e3d77cf;
+  backdrop-filter: blur(2px)
+}
+
+.mainCircle {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  outline: 3px solid var(--firstMainColor);
+  transform: translate(-50%, 30%);
+  position: relative;
+  background-image: url("../../Photos/homeBackground.jpg");
+  background-size: cover;
+  background-position: -10%;
+  outline-offset: 80px;
+  border: 3px solid var(--firstMainColor);
+}
+
+section {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section:nth-child(1) {
+  right: -110px;
+}
+
+section:nth-child(2) {
+  top: 135px;
+  right: -230px;
+}
+
+section:nth-child(3) {
+  top: 290px;
+  right: -240px;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--firstMainColor);
+  background-color: var(--secondMainColor);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 100px;
+  height: 100px;
+  padding: 10%;
+  fill: var(--firstMainColor);
+}
+section:hover .icon{
+  background-color: #4e3d77;
+}
+
+section label {
+  font-size: 30px;
+  color: var(--firstMainColor);
+  cursor: pointer;
+}
+
+@media (max-width: 645px) {
+    .mainCircle {
+        transform: scale(0.8) translate(-95%, 40%);
+    }
+}

@@ -1,0 +1,10 @@
+form {
+    background-color: var(--secondMainColor);
+    width: 80% !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 4px #0000005c;
+}

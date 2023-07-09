@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Pages/Login/Login.css" />
+    <link rel="stylesheet" href="Styles/Style.css" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3389/3389081.png" type="image/x-icon">
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="imageSction">
+        <img class="mainImage" src="Pictures/mainImage.jpg" />
+      </div>
+
+      <!-- /* start data section */ -->
+      <div class="dataSection">
+        <h1 class="headerLable">Welcome!</h1>
+        <p class="quote">TODAY A READER TOMORROW A LEADER</p>
+
+        <form action="" method="GET" class="formSection">
+          <div class="subContainer">
+            <input id="email" class="inputs" type="email" placeholder="Email" />
+            <label htmlFor="email" class="labels">Email</label>
+          </div>
+
+          <div class="subContainer">
+            <input
+              id="password"
+              class="inputs"
+              type="password"
+              placeholder="Password"
+            />
+            <label htmlFor="password" class="labels">Password</label>
+          </div>
+
+          <button class="Button" id="login-btn">Login</button>
+          <p class="navegationParagraph">
+            Don't have an account?
+            <a href="Pages/Signup/Signup.html" class="navegationLink">sign up.</a>
+          </p>
+        </form>
+      </div>
+      <!-- /* end data section */ -->
+    </div>
+    <script src="Pages/Login/login.js"></script>
+  </body>
+</html>

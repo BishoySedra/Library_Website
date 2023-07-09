@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    color: var(--fontColor);
+    background: var(--firstMainColor);
+}
+
+body {
+    background-color: var(--secondMainColor);
+}
+
+:root {
+    --firstMainColor: #ff2359;
+    --secondMainColor: #3d305b;
+    --fontColor: white;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+}
+
+/* start nav */
+.visited {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: var(--firstMainColor);
+    font-size: 20px;
+    background-color: var(--secondMainColor);
+    padding: 25px 30px;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+  }
+  
+  nav ul li:hover {
+    color: white;
+  }
+  /* end nav */
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: fit-content;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imageSction {
+    overflow: hidden;
+}
+
+.mainImage {
+    height: 100%;
+}
+
+.dataSection {
+    background-color: var(--secondMainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.formSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* start label and quote section style */
+.headerLable {
+    font-weight: 900;
+    font-size: 45px;
+    color: var(--firstMainColor);
+}
+
+.quote {
+    font-weight: 200;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--fontColor);
+    margin: 7px;
+    text-align: center;
+}
+/* end label and quote section style */
+
+/* start label style */
+.labels {
+    color: var(--fontColor);
+    font-size: 15px;
+    width: 30%;
+}
+
+.inputs:focus + .labels{
+    color: #ff2359;
+}
+/* end label style */
+
+/* start input section style */
+.inputs {
+    border: none;
+    padding: 13px;
+    margin: var(--mainMargin);
+    background-color: rgba(255, 255, 255, 0.064);
+    color: var(--firstMainColor);   
+    width: 70%; 
+}
+
+.inputs:focus {
+    outline: none;
+}
+/* end input section style */
+
+/* start button section style */
+.Button ,
+.lottieButton {
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--firstMainColor);
+    color: var(--secondMainColor);
+    width: 100%;
+}
+
+.Button:active,
+.lottieButton:active,
+.biX:active {
+    transform: scale(0.96);
+}
+
+.Button:hover,
+.lottieButton:hover {
+    cursor: pointer;
+}
+
+/* end button section style */
+
+.navegationParagraph,
+.navegationLink {
+    color: var(--firstMainColor);
+    font-size: 14px;
+}
+
+.navegationParagraph:hover,
+.navegationParagraph:hover> * {
+    color: var(--fontColor);
+}
+
+.navegationLink {
+    cursor: pointer;
+}
+
+.lottieBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--fontColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px var(--secondMainColor);
+}
+
+.lottieImage {
+    width: 200px;
+    height: 200px;
+}
+
+.lottieMessage {
+    text-align: center;
+    color: #3d305b80;
+    width: fit-content;
+}
+
+.lottieMessageH1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--secondMainColor);
+}
+
+.lottieMessageBackground {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.validationBox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var(--fontColor);
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.biX {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    fill: var(--firstMainColor);
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.biX:hover {
+    background-color: #ff235a38;
+}
+
+.biExclamation {
+    width: 20px;
+    height: 20px;
+    fill: var(--firstMainColor);
+    margin: 10px 20px 10px 10px;
+    box-shadow: 0 0 0px 10px #ff235a38;
+    border-radius: 50%;
+}
+
+.validationMessage {
+    color: var(--firstMainColor);
+}

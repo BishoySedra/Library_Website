@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Signup.css" />
+    <link rel="stylesheet" href="../../Styles/Style.css" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3389/3389081.png" type="image/x-icon">
+
+    <title>Signup</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="imageSction">
+        <img class="mainImage" src="../../Pictures/mainImage.jpg" />
+      </div>
+
+      <!-- {/* start data section */} -->
+      <div class="dataSection">
+        <h1 class="headerLable">Registration</h1>
+        <p class="quote">TODAY A READER TOMORROW A LEADER</p>
+
+        <form action="" method="POST" class="formSection">
+          <!-- {/* start name section */} -->
+          <div class="subContainer">
+            <input
+              id="name"
+              class="inputs"
+              type="text"
+              placeholder="Username"            
+            />
+            <label htmlFor="name" class="labels">Name</label>
+          </div>
+          <!-- {/* end name section */} -->
+
+          <!-- {/* start email section */} -->
+          <div class="subContainer">
+            <input id="email" class="inputs" type="email" placeholder="Email" />
+            <label htmlFor="email" class="labels">Email</label>
+          </div>
+          <!-- {/* end email section */} -->
+
+          <!-- {/* start gender section */} -->
+          <div class="subContainer">
+            <div class="genderContainer">
+              <label htmlFor="genderFemale" class="labelsG">
+                <input
+                  id="genderFemale"
+                  name="gender"
+                  type="radio"
+                  value="female"
+                />
+                <span class="radioButton">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="biGender"
+                    viewBox="-1.5 0 19 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"
+                    />
+                  </svg>
+                  <p class="genderLabel">Female</p>
+                </span>
+              </label>
+
+              <label htmlFor="genderMale" class="labelsG">
+                <input
+                  id="genderMale"
+                  name="gender"
+                  type="radio"
+                  value="male"
+                />
+                <span class="radioButton">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="biGender"
+                    viewBox="-1 0 19 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"
+                    />
+                  </svg>
+                  <p class="genderLabel">Male</p>
+                </span>
+              </label>
+            </div>
+            <label class="labels">Gender</label>
+          </div>
+          <!-- {/* end gender section */} -->
+
+
+          <div class="subContainer">
+            <input
+              id="password"
+              class="inputs"
+              type="password"
+              placeholder="Password"
+              minlength="6"
+              maxlength="20"
+            />
+            <label htmlFor="password" class="labels">Password</label>
+          </div>
+
+          <div class="subContainer">
+            <input
+              id="confirmPassword"
+              class="inputs"
+              type="password"
+              placeholder="Confirm Password"
+              minlength="6"
+              maxlength="20"
+            />
+            <label htmlFor="confirmPassword" class="labels"
+              >Confirm Password</label
+            >
+          </div>
+
+          <button class="Button" id="submit-btn">Confirm</button>
+          <p class="navegationParagraph">
+            Already have an account?
+            <a class="navegationLink" href="../../index.html">Login.</a>
+          </p>
+        </form>
+      </div>
+      <!-- {/* end data section */} -->
+      <script src="signup.js"></script>
+    </div>
+  </body>
+</html>

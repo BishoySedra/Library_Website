@@ -1,0 +1,98 @@
+body {
+  background-image: url("../../Photos/homeBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+main {
+  height: 100vh;
+  background-color: #4e3d77cf;
+  backdrop-filter: blur(2px);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* start books section */
+section {
+  margin: 20px 30px 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  width: 85%;
+  margin: 40px auto;
+}
+
+
+section .book {
+  background-color: var(--secondMainColor);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section .book:hover {
+  outline: 3px solid var(--firstMainColor);
+}
+
+section .book .bookImage {
+  width: 100%;
+  /* height: 200px; */
+  background-color: var(--firstMainColor);
+}
+
+section .book .bookImage img {
+  width: 100%;
+}
+
+section .book .bookName {
+  color: var(--firstMainColor);
+  margin: 10px;
+}
+/* end books section */
+
+/* start button section style */
+Button {
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: var(--firstMainColor);
+  color: var(--secondMainColor);
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+Button:nth-of-type(1) {
+  background-color: transparent;
+  color: var(--firstMainColor);
+  border: 2px solid;
+}
+Button:nth-of-type(1):hover {
+  background-color: #4e3d77;
+}
+
+Button:active {
+  transform: scale(0.96) translateX(-50%);
+}
+
+Button:hover {
+  cursor: pointer;
+}
+
+#add-btn {
+  background-color: lightgreen;
+  color: black;
+  font-weight: bold;
+}
+
+#remove-btn {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}
+/* end button section style */
